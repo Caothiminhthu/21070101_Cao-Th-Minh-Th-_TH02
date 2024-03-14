@@ -1,0 +1,328 @@
+   <!DOCTYPE html>
+<html>
+  <title> 21070101_CAO THỊ MINH THƯ_BÀI TH02 </title>
+  <link rel="stylesheet" href="/style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <h1>BÀI 1:</h1>
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1>Giải phương trình bậc 1</h1>
+        <div class="input-group">
+            <label for="input-a">Nhập hệ số a:</label>
+            <input type="number" id="input-a">
+        </div>
+        <div class="input-group">
+            <label for="input-b">Nhập hệ số b:</label>
+            <input type="number" id="input-b">
+        </div>
+        <button class="btn" onclick="giaiPhuongTrinh()">Giải phương trình</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function giaiPhuongTrinh() {
+            var a = parseFloat(document.getElementById('input-a').value);
+            var b = parseFloat(document.getElementById('input-b').value);
+            var resultEl = document.getElementById('result');
+
+            if (a === 0) {
+                if (b === 0) {
+                    resultEl.innerHTML = "Phương trình vô số nghiệm";
+                } else {
+                    resultEl.innerHTML = "Phương trình vô nghiệm";
+                }
+            } else {
+                var x = -b / a;
+                resultEl.innerHTML = "Nghiệm của phương trình là x = " + x;
+            }
+        }
+    </script>
+   </center> 
+
+ 
+
+
+
+
+  <h1> BÀI 2:</h1>
+    <title>Đóng góp ý kiến sản phẩm</title>
+    <style>
+        .container {
+            width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .input-group label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 250px;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: pink;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <div class="container">
+        <center>
+        <h1>Đóng góp ý kiến sản phẩm</h1>
+        <form action="#" method="post">
+          
+     <div class="wrapper">    
+          <div class="box1">
+            <div class="input-group">
+                <input type="text"  placeholder = "Họ và tên" required>
+            </div>
+             </div>
+            
+              <div class="box2">
+            <div class="input-group">
+                 <input type="text"  placeholder = "Mã thẻ" required>
+            </div>
+              </div>
+    
+            
+          
+          <div class="box3">
+            <div class="input-group">
+                <input type="text"  placeholder = "Số điện thoại" required>
+            </div>
+            </div>
+            
+              <div class="box4">
+            <div class="input-group">
+                <input type="text"  placeholder = "Email" required>
+            </div>
+            </div>
+       
+            <div class="box5">
+            <div class="input-group">
+                <select id="input-customer-type" required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+             </div>
+       
+             <div class="cot2">
+            <div class="input-group">
+                <input type="text"  placeholder = "Mã hóa đơn" required>
+            </div>
+            </div>
+     </div> 
+            <div class="mota">
+                <textarea  placeholder = "Nhập chi tiết mô tả"  required></textarea>
+            </div>
+            <button class="btn" type="submit">Gửi góp ý </button>
+   </form>
+    </div>
+
+
+
+<h1>BÀI 3:</h1>
+  
+
+<div class="h">
+  <h1>LIÊN HỆ</h1>
+</div>
+  
+    <form action="#" method="post">
+ <div class="wrapper">
+   <div class="Box1">
+       <b>Thông tin</b>
+   </div>
+   
+   <div class="box2">
+       <b class="tim">Hãy liên lạc với chúng tôi bất cứ khi nào!</b>
+   </div>
+   
+   <div class="box3">
+       <p> <i class="fa-solid fa-map"></i> Kp.6, P.Linh Trung, Tp.Thủ Đức,Tp.HCM</p>
+   </div>
+   
+   <div class="box4">
+     <div class="lienhe">
+       <input type="text"  placeholder = "Họ và tên" required>
+     </div>
+   </div>
+   
+   <div class="box5">
+      <p> <i class="fa-solid fa-book"></i> info@uit.edu.vn</p>
+   </div>
+   
+   <div class="box6">
+     <div class="lienhe">
+     <input type="email"  placeholder = "Địa chỉ e-mail" required>
+     </div>
+   </div>
+   
+  <div class="box7">
+      <p> <i class="fa-solid fa-phone"></i> +84 28 372 52002</p>
+   </div>
+  
+   <div class="box8">
+     <div class="lienhe">
+     <input type="text"  placeholder = "Tiêu đề bài viết" required>
+     </div>
+   </div>
+   
+   <div class="box9">
+     <p>     </p>
+   </div>
+   
+   <div class="box10">
+     <div class="lienhe">
+    <textarea  placeholder = "Nội dung cần gửi"  required></textarea>
+     </div>
+   </div>
+   <center>
+      <button class="btn" type="submit">Gửi tin nhắn <i class="fa-solid fa-earth"></i> </button>
+   </center>
+</div>
+  </form>
+  
+      
+      
+  <h1>BÀI 4:</h1>
+      <div class="background">
+        <div class="bai4">
+        
+        <center>
+        <h3 class="heading">Tính chỉ số BMI</h3>
+        <div class="input-bai4">
+            <b for="input-c">Nhập chiều cao:</b>
+            <input type="number" id="input-c">
+        </div>
+        <div class="input-bai4">
+            <b for="input-d">Nhập cân nặng:</b>
+            <input type="number" id="input-d">
+        </div>
+        <div class="input-bai4">
+          <b>Chọn loại tuổi:</b>
+                <select required>
+                    <option value="trung niên">Trung niên</option>
+                    <option value="Trung niên, già lớn tuổi">Trung niên, già lớn tuổi</option>
+                    <option value="Già, lớn tuổi">Già, lớn tuổi</option>
+                </select>
+        </div>
+        <button class="btn" onclick="Tính BMI()">Tính BMI</button>
+        <div class="result" id="result"></div>
+        </center>
+    </div>
+    </div>
+      <script>
+              function Tinh BMI() {
+            var c = (document.getElementById('input-c').value);
+            var d = (document.getElementById('input-d').value);
+            var resultEl = document.getElementById('result');
+            var x = c / d;
+            if (x<18,5) {
+                 resultEl.innerHTML = x + "Dưới Chuẩn";
+            }    
+            if (18,5<x<24,9) {
+                 resultEl.innerHTML = x + "Bình thường";
+            }    
+            
+          
+        }
+    </script>
+      
+      
+    
+      
+      if (a === 0) {
+                if (b === 0) {
+                    resultEl.innerHTML = "Phương trình vô số nghiệm";
+                } else {
+                    resultEl.innerHTML = "Phương trình vô nghiệm";
+                }
+            } else {
+                var x = -b / a;
+                resultEl.innerHTML = "Nghiệm của phương trình là x = " + x;
+            }
+        }
+    </script>
+   </center> 
+
+ 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+<h1>Bài 5:</h1>
+<div class="bai5">
+    <div class="bai5-container">
+        <h4 class="bai5-heading">Login</h4>
+        <form action="" >
+            <input type="text" class="bai5-name" placeholder="Tên TK"><br>
+            <input type="password" name="" id="bai5-password" class="bai5-pass" placeholder="Mật khẩu">
+            <input type="button" value="🔒" class="bai5-btn" onclick="bai5()">
+        </form>
+        
+    </div>
+</div>
+      
+
+      
+      
+<h1>Bài 6:</h1>
+<div class="bai6">
+    <div class="bai6-container">
+        <h3 class="heading">Login</h3>
+        <p>Login here using your username and password</p>
+        <form action="" class="bai6-form">
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="bai6-username" class="bai6-input"><br>
+            <i class="fa fa-instagram icon"></i>
+            <input type="password" id="bai6-password"  class="bai6-input">
+        </form>
+        <div class="bai6-button">
+            <span class="bai6-2button">
+                Forgot 
+            </span>
+            <span class="bai6-2button">
+                Sign up
+            </span>
+        </div>
+    </div>
+</div>
+ <script src="index.js"></script>
+</body>
+</html>
+  </body>
+</html>

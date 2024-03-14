@@ -1,0 +1,138 @@
+.container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+.input-group {
+            margin-bottom: 10px;
+        }
+
+ .input-group label {
+            display: inline-block;
+            width: 80px;
+        }
+ .input-group input {
+            width: 150px;
+            padding: 5px;
+        }
+.result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+.btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 60px;
+  grid-gap:3px ;
+}
+.h{
+color: blue;
+border-bottom: 4px solid red;
+}
+.tim{
+  color: purple;
+}
+.lienhe{
+  width: 1100px;
+}
+.background{
+    width: 65%;
+    height: 500px;
+    background: linear-gradient(115deg, rgba(2,0,36,1) 0%, rgba(55,170,190,1) 0%, rgba(173,145,84,1) 100%, rgba(82,117,88,0.9189189189189189) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 200px;
+}
+.bai4{
+    height: 400px;
+    width: 200px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.heading{
+    color: white;
+    background: #387ADF;
+    width: 90%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.bai4-form{
+    margin-top: 30px;
+}
+.bai4-button{
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #59D5E0;
+}
+.bai5{
+    width: 65%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0px 200px;
+}
+
+.bai5-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.bai5-btn{
+    color: white;
+    background-color: red;
+}
+.heading {
+    font-size: 25px;
+}
+.bai6-container{
+    width: 400px;
+    height: fit-content;
+    background: rgb(2,0,36);
+    background: linear-gradient(115deg, rgba(2,0,36,1) 0%, rgba(55,170,190,1) 0%, rgba(173,145,84,1) 100%, rgba(82,117,88,0.9189189189189189) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    border-radius: 10px;
+}
+.bai6-form i {
+    position: absolute;
+}
+.bai6-form >i{
+    padding: 17px;
+    min-width: 40px;
+}
+.bai6-input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.bai6-2button{
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+}
+.bai6-button{
+margin: 10px;
+}
